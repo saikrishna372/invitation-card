@@ -1,0 +1,17 @@
+body{
+    background: url('background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.robo{
+    padding-top: 45vh;
+    
+}
+.robot{
+    padding-right: 20px;
+    padding-top: 50vh;
+    padding-bottom: 10vh;
+    
+    
+}

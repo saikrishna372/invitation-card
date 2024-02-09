@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freshers' Day Invitation</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;500&family=Protest+Revolution&family=Roboto&family=Ubuntu:ital@1&display=swap');
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fcf9f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #09090940;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 500px;
+    }
+    h1 {
+      color: #ffe600;
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: 'Protest Revolution', sans-serif;
+    }
+    p {
+      color: hsl(0, 0%, 90%);
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: 'Ubuntu', sans-serif;
+      
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: calc(100% - 20px);
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #1aebf9;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+    <div> 
+        <img src="mouse.png" width="300px" height="350px" class="robo">
+    </div>
+  <div class="container">
+    <h1>Welcome to Freshers' Party!</h1>
+    <p>Please enter your name to receive your invitation.</p>
+    <form action="invitation_page.html" method="get">
+        <label for="student_name">Enter Your Name:</label><br>
+        <input type="text" id="student_name" name="student_name" required><br>
+        <input type="submit" value="Submit">
+      </form>
+      
+  </div>
+  <div> 
+    <img src="micky.png" width="300px" height="350px" class="robot">
+  </div>
+</body>
+</html>

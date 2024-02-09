@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitation from AI & ML Department</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;500&family=Protest+Revolution&family=Roboto&family=Ubuntu:ital@1&display=swap');
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      background-image: url(background2.jpg); background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; 
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      max-width: 600px;
+      padding: 20px;
+      background-color: #09090940;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      color: #f5e536;
+      font-family: 'Protest Revolution', sans-serif;
+    }
+    p {
+      color: #8f29ca;
+      margin-bottom: 20px;
+      font-family: 'Caveat', cursive;
+      font-size: 30px;
+      
+    }
+    #studentNameMessage {
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      color: #201b70;
+      font-size: 20px;
+      padding-bottom:5px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Freshers Party!</h1>
+    <p>We are delighted to extend our warmest invitation to the Freshers Day event organized by the seniors and faculty of the <Span style="color:rgb(223, 8, 8); font-family: 'Ubuntu', sans-serif; ">Artificial Intelligence and Machine Learning department </span> </p>
+    <p id="studentNameMessage"></p>
+    <p> <a href="letter.html"> click Here! </a> </p>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Function to extract URL parameters
+        function getParameterByName(name, url = window.location.href) {
+          name = name.replace(/[\[\]]/g, '\\$&');
+          const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+          if (!results) return null;
+          if (!results[2]) return '';
+          return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Get the student name from the URL parameter
+        const studentName = getParameterByName('student_name');
+
+        // Display the student name message
+        if (studentName) {
+          document.getElementById('studentNameMessage').innerHTML = 'Dear <strong>' + studentName + '</strong>, we look forward to seeing you at the event!';
+        } else {
+          document.getElementById('studentNameMessage').innerHTML = 'We look forward to seeing you at the event!';
+        }
+      });
+    </script>
+    <!-- Add more content here as needed -->
+  </div>
+
+  
+</body>
+</html>
+
